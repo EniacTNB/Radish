@@ -1,0 +1,52 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>萝卜网登录</title>
+<!-- Custom Theme files -->
+<link href="/static/wuyunlogin/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="后台登录" />
+<!--Google Fonts-->
+<!--<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+--><!--Google Fonts-->
+</head>
+<body>
+<!--header start here-->
+<div class="login-form">
+			<div class="top-login">
+				<span><img src="/static/wuyunlogin/images/icon4.png" alt=""/></span>
+			</div>
+			<h1>登录萝卜网</h1>
+			<div class="login-top">
+			<form action="/login/" method="post" autocomplete="off">
+				<div class="login-ic">
+					<i ></i>
+					<input name="Username"  id="account_1" type="text"  value="Username(email)" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Please input username or email';}"/>
+					<div class="clear"> </div>
+				</div>
+				<div class="login-ic">
+					<i class="icon"></i>
+					<input name="Password" id="password_1" type="password"  value="Password" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Please input password';}"/>
+					<div class="clear"> </div>
+				</div>
+			
+				<div class="log-bwn">
+					<input type="submit"  value="Login" >
+				</div>
+                {% csrf_token %}
+				</form>
+                <p class="copy">没有萝卜网账号?<a href="register.html">[立即注册]</a></p>
+			</div>
+			<p class="copy">Copyright &copy; 2018. Radish.com All rights reserved.</p>
+</div>		
+<!--header start here-->
+</body>
+</html>
